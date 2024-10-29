@@ -30,7 +30,7 @@ class Personnage:
 
     def attaquer(self, cible):
         if self.arme:
-            print(f"{self.nom} attaque {cible.nom}!")
+            print(f"{self.nom} attaque {cible.nom} avec {self.arme.nom}!")
             degats = self.force * 2 + self.arme.degats
         else:
             print(f"{self.nom} attaque {cible.nom}!")
